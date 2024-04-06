@@ -1,5 +1,7 @@
 # RBST: CMake isn't all that scary Edition
 
+https://thiago-dfb.itch.io/rbst
+
 ## PRE-RECORDED VIDEO
 
 https://drive.google.com/file/d/1wsL0v7RvVR1O1-ugBXPX9bT9yLrIXoPD/view?usp=sharing
