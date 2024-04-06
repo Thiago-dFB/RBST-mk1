@@ -58,7 +58,7 @@ OS: Windows 8/10/11
 
 ## ABOUT THE CODE AND LIBRARIES ##
 
-## Requirements
+### Requirements
 - Visual Studio 2019
 - CMake 3.29 or later
 
