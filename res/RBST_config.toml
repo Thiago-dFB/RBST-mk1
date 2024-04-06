@@ -1,0 +1,51 @@
+# some things to consider
+# - only values smaller than 128 for decimal values
+# - no negative values, ever (haven't tested it but nothing good can come out of it)
+# - projectile limit is 16 and the game isn't even optimized for bullet hell
+# - MAKE SURE BOTH PLAYERS HAVE THE EXACT SAME CONFIG OR THE GAME WILL DESYNC WHEN YOU BREATHE ON IT
+
+[GameRules]
+playerHealth   = 5
+roundsToWin    = 2
+roundCountdown = 3		# round start countdown  (in seconds)
+roundTime      = 100	# round length           (in seconds)
+roundEndTime   = 3		# slo-mo after round end (in seconds)
+
+[PlayerResources]
+ammoMax    = 100	# time for ammo to fully fill    (in frames)
+shotCost   = 50		# shot cost from ammo            (in frames)
+railCost   = 100	# railgun cost from ammo         (in frames)
+staminaMax = 150	# time for stamina to fully fill (in frames)
+dashCost   = 50		# dash cost from stamina         (in frames)
+
+[PlayerActions]
+dashPhase      = 8	# transition from normal momvement to dash (in frames)
+dashPerfect    = 10	# perfect evade window                     (in frames)
+dashDuration   = 20	# dash length                              (in frames)
+chargeDuration = 45	# railgun charge length                    (in frames)
+
+[PlayerSpeed]
+playerWalkSpeed = "4.0"		# player walking speed        (in units per second)
+playerWalkAccel = "4.5"		# player walking acceleration (in units per second^2)
+playerWalkFric  = "2.8"		# player walking friction     (in units per second^2)
+playerDashSpeed = "24.0"	# player dash speed           (in units per second)
+
+[Projectiles]
+projSpeed    = "10.0"	# projectile starting speed (in units per second)
+projMultiply = "1.5"	# projectile speed multiplier for each deflect
+
+[Radius]
+playerRadius = "0.5"	# player hitbox radius           (in units)
+grazeRadius  = "0.9"	# player grazebox radius         (in units)
+projRadius   = "0.3"	# projectile hitbox radius       (in units)
+comboRadius  = "6.0"	# railgun combo hitbox radius    (in units)
+arenaRadius  = "12.0"	# radius of circled arena        (in units)
+spawnRadius  = "10.0"	# spawn distance from the center (in units)
+
+[HitStrength]
+weakForce     = "3.0"	# force applied to   projectile hits         (in units per second)
+weakHitstop   = 5		# hitstop applied to projectile hits         (in frames)
+midForce      = "7.5"	# force applied to   tackle and railgun hits (in units per second)
+midHitstop    = 10		# hitstop applied to tackle and railgun hits (in frames)
+strongForce   = "12.0"	# force applied to   railgun combo hits      (in units per second)
+strongHitstop = 20		# hitstop applied to railgun combo hits      (in frames)

@@ -1,0 +1,6 @@
+[Network]
+remoteAddress = "127.0.0.1"
+port = 8001
+
+[HomeScreen]
+demoFiles = ["demo_match_2023-3-29_22-38-32.rbst"]

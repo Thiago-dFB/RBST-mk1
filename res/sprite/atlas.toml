@@ -1,0 +1,21 @@
+#region is a square to have some wiggle room for the 3 poses
+#keep the variations in the same coordinates as in the original sprite
+[chars]
+size = [32,32]
+
+[effects]
+graze = [0,0,8,8]
+alert = [8,0,8,8]
+
+#HUD element, always rendered square
+[hearts]
+heartRed = [0,0,8,8]
+heartBlue = [8,0,8,8]
+roundNo = [16,0,8,8]
+roundYes = [24,0,8,8]
+
+#don't fill the whole region with the projectile itself, some space around it is reserved for some effects
+[projs]
+red = [0,0,32,32]
+blue = [32,0,32,32]
+target = [64,0,32,32]
