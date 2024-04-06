@@ -56,7 +56,7 @@ OS: Windows 8/10/11
     - negatively affecting your capability to react on time, such as lockstep and delay-based (lockstep with input delay).
 - As a side effect of determinism, a replay feature was as simple as storing input data as soon as each peer confirms their inputs for each frame.
 - Tying into the application of rollback into more advanced games, particle corrections for sharp game state changes upon rollback were implemented, albeit through crude heuristics, such as spatial and temporal proximity.
-- Due to unconclusive research on how cross-platform determinism can be achieved even with floating point at the time of writing the thesis, a fixed point math library was used instead, gravely diminishing maximum decimal values that could be used.
+- Due to inconclusive research on how cross-platform determinism can be achieved even with floating point at the time of writing the thesis, a fixed point math library was used instead, gravely diminishing maximum decimal values that could be used.
 
 ## ABOUT THE CODE AND LIBRARIES ##
 
